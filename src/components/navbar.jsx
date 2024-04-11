@@ -17,7 +17,7 @@ export default function Navbar() {
             </div>
             <div className="navbar-end flex-1">
               <ul className="menu menu-horizontal px-1 text-xl">
-                <li className="btn btn-outline"><a href="https://discord.gg/jawir" target="_blank">Join Discord</a></li>
+                <li className="btn btn-outline"><a href="https://discord.gg/jawir" target="_blank" rel="noopener noreferrer">Join Discord</a></li>
               </ul>
             </div>
           </div>
