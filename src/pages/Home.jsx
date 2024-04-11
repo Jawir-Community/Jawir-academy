@@ -1,4 +1,6 @@
 import Logo from "../assets/images/jawir.png";
+import CardTeam from '../components/CardTeam';
+import teams from "../utils/data";
 
 export default function Home() {
     return (
@@ -13,6 +15,16 @@ export default function Home() {
                 </div>
                 <div className="flex justify-center">
                     <img className="w-[500px] h-[500px]" src={Logo} alt="Jawir Academy Logo" />
+                </div>
+            </div>
+            <div className="container mx-auto border-b-2 border-b-gray-300">
+                <div className="py-16 px-8">
+                    <h2 className="text-2xl font-bold text-gray-900 text-center mb-4">Our Teams</h2>
+                    <div className="flex flex-wrap justify-around lg:gap-[2rem] items-center">              
+                        {teams.map((team, index) => {
+                        return <CardTeam key={index} name={team.name} img={team.img} desc={team.desc}/>
+                        })}
+                    </div>
                 </div>
             </div>
         </>
