@@ -2,7 +2,7 @@ import FormInput from '../components/FormInput';
 export default function Contact() {
     return (
         <>
-            <div className="bg-red-500 container mx-auto h-screen flex flex-col justify-center">
+            <div className="container mx-auto h-screen flex flex-col justify-center">
                 <h2 className="text-8xl mb-10 font-bold">Contact Us</h2>
                 <p className="text-2xl w-[800px] mb-10">We cant solve your problem if you dont tell us about it</p>
                 <div className="flex justify-start items-start gap-10">
