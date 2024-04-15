@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/prop-types
 function FormInput({ svg, placeholder, type }) {
     return (
         <label className="input input-bordered flex items-center gap-2">
