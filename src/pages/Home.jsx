@@ -1,6 +1,6 @@
 import Logo from "../assets/images/jawir.png";
 import CardTeam from '../components/CardTeam';
-import teams from "../utils/data";
+import Teams from "../utils/data";
 
 export default function Home() {
     return (
@@ -21,8 +21,8 @@ export default function Home() {
                 <div className="py-16 px-8">
                     <h2 className="text-2xl font-bold text-gray-900 text-center mb-4">Our Teams</h2>
                     <div className="flex flex-wrap justify-around lg:gap-[2rem] items-center">              
-                        {teams.map((team, index) => {
-                        return <CardTeam key={index} name={team.name} img={team.img} desc={team.desc}/>
+                        {Teams.map((team, index) => {
+                        return <CardTeam key={index} name={team.name} img={team.img} desc={team.desc} instagram={team.instagram} github={team.github} linkedin={team.linkedin}/>
                         })}
                     </div>
                 </div>
