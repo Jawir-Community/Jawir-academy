@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/prop-types
 function CardTeam({ name, img, desc, instagram, github, linkedin }) {
   return (
     <>
