@@ -12,6 +12,7 @@ export default function Navbar() {
             <div className="navbar-center flex-none">
               <ul className="menu menu-horizontal px-1 text-xl gap-2">
                 <li><Link to={"/"}>Home</Link></li>
+                <li><Link to={"/contact"}>Contact</Link></li>
               </ul>
             </div>
             <div className="navbar-end flex-1">
