@@ -4,16 +4,18 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 
-function App() {
+function App(background) {
 
   return (
     <>
       <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <div className={background}>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </>
   )
