@@ -2,18 +2,22 @@ import { BrowserRouter ,Routes ,Route } from 'react-router-dom'
 import React from 'react';
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
+import Contact from './pages/Contact'
 import Footer from './components/Footer'
 
-function App() {
+function App(background) {
 
   return (
     <>
       <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-        <Footer />
+        <div className={background}>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+          <Footer />
+        </div>
       </BrowserRouter>
     </>
   )
